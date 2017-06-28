@@ -1,13 +1,13 @@
 Rangesearch-box
 ==============
 
-Rangesearch-box is a algorithm performing range search queries.<br>
+Rangesearch-box is an algorithm performing range search queries.<br>
 Not pretending to be optimal or more flexible than other solutions,<br>
 but rather an experiment of a non tree based rangesearch algorithm.
 
 ## Algorithm
 The overall idea is to sort the points according to each dimension and index them.<br>
-We can then apply some efficient search algorithm in the sorted arrays.<br>
+We can then apply some efficient search algorithm in the sorted arrays (one per dimensions).<br>
 The intersection of indexes on each dimension will finally provide the boxes.
 
 ## Visually speaking
