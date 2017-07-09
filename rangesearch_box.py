@@ -25,6 +25,7 @@ def rangesearch_box(X):
 
     intersect = lambda a, b: np.intersect1d(a, b, assume_unique=True)
 
+
     # Clojure for query
     def query(pt, boundaries):
         """
