@@ -28,7 +28,7 @@ However the performances of this approach are quite good for a python/numpy impl
 Faster than sklearn Balltree (in cython) with a python metric (which is a bottle neck) ~x25.<br>
 More details in the demo notebook.
 
-We can also note that is scales properly with the number of dimension (perf-wise)
+We can also note that is scales properly with the number of dimensions (perf-wise)
 
 It was a funny experiment =)<br>
 Could be interesting to implement in cython.
