@@ -8,6 +8,7 @@ def _search_segment(sorted_arr, pt, (l_l, r_l)):
     """
     Gather the matching indexes for 1 dimension and the boundaries.
     """
+
     beg = np.searchsorted(sorted_arr[:, 1], pt + l_l, side='left')
     end = np.searchsorted(sorted_arr[:, 1], pt + r_l, side='right')
 
@@ -29,6 +30,7 @@ def rangesearch_box(X):
         """
         Perform the range search according to a box shape.
         """
+
         all_ix = [_search_segment(s_arr_1d, pt[:, i], limit) for i, (s_arr_1d, limit) \
                                             in enumerate(zip(sorted_arr, boundaries))]
 
